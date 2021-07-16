@@ -4,8 +4,9 @@ const products = require('../data/dbProducts');
 
 module.exports = {
     list : (req,res) => {
-        //return res.sendFile(path.join(__dirname,'..','views','productList.html'));
-        return res.send(products)
+        return res.render('productList',{
+            title : "Lista de productos"
+        })
     },
     detail : (req,res) => {
         //return res.sendFile(path.join(__dirname,'..','views','productDetail.html'))
