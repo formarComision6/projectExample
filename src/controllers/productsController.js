@@ -14,8 +14,19 @@ module.exports = {
         
         return res.send(producto)
     },
-    sale : (req,res) => {
-        let ofertas = products.filter(product => product.category === "in-sale");
-        return res.send(ofertas)
+    add : (req,res) => {
+
+    },
+    save : (req,res) => {
+
+    },
+    edit : (req,res) => {
+
+    },
+    update : (req,res) => {
+
+    },
+    remove : (req,res) => {
+
     }
 }
